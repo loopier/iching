@@ -1,0 +1,75 @@
+TITLE:: IChing
+summary:: consults the oracle
+categories:: Math, Random
+related:: Classes/SomeRelatedClass, Reference/SomeRelatedStuff
+
+DESCRIPTION::
+Consult the oracle
+
+code::
+s.boot;
+::
+
+
+CLASSMETHODS::
+
+METHOD:: new
+
+code::
+i = IChing.new;
+::
+
+
+METHOD:: hexagramNumber
+Returns the hexagram as a decimal number.
+**WARNING!:** It doesn't correspond to Whilhelm's numbering, it's a translation to binary form.
+argument:: hexagram
+A number between 1 and 64.
+
+METHOD:: hexagramAsBinary
+Returns the hexagram as a binary array.
+argument:: hexagram
+A number between 1 and 64.
+
+METHOD:: post
+Prints the hexagram.
+argument:: hexagram
+An array of 6 zeros and ones.
+
+INSTANCEMETHODS::
+
+METHOD:: consult
+Consult the oracle and get an hexagram
+
+METHOD:: post
+
+METHOD:: lineNum
+Returns the line's I Ching number (6, 7, 8 or 9) given it's position.
+argument:: lineposition
+1 is bottom, 6 is top.
+
+METHOD:: lineBinary
+Returns the binary value of a line given it's position.
+argument:: lineposition
+1 is bottom, 6 is top.
+
+METHOD:: lineChanging
+Returns if the line at the given position is changing.
+argument:: lineposition
+1 is bottom, 6 is top.
+
+METHOD:: hexagramNumber
+Same as IChing.hexagramNumber.
+
+METHOD:: asBinary
+Returns the hexagram as a binary array.
+
+METHOD:: asBinaryArray
+Returns the hexagram as a binary array.
+
+EXAMPLES::
+
+code::
+s.boot;
+
+::
